@@ -1,0 +1,235 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layoutDirection="ltr">
+
+    <include
+        android:id="@+id/Header"
+        layout="@layout/activity_header"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_language"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/changeLanguage"
+            android:textColor="@color/uvv_black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_changeLanguage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:drawableRight="@drawable/language"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/Arabic"
+            android:textColor="@color/uvv_black"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="start"
+                    android:gravity="center"
+                    android:text="@string/Welcome"
+                    android:textColor="#2F2F2F"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border_bottom"
+                    android:layoutDirection="ltr">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ed_Key"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        app:ccp_autoDetectCountry="false"
+                        app:ccp_contentColor="#50BCB4"
+                        app:ccp_defaultLanguage="ARABIC"
+                        app:ccp_defaultNameCode="kw"
+                        app:ccp_showFullName="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_textSize="12sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/Mobile"
+                        android:layoutDirection="ltr"
+                        android:textColorHint="#50BCB4"
+                        app:endIconMode="none"
+                        app:startIconContentDescription="@string/app_name"
+                        app:startIconDrawable="@mipmap/ic_call"
+                        app:startIconTint="#50BCB4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_Mobile"
+                            style="@style/BoldText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="left|center_vertical"
+                            android:inputType="phone"
+                            android:maxLength="8"
+                            android:text=""
+                            android:textColor="#363636"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/border_bottom"
+                    android:hint="@string/Password"
+                    android:layoutDirection="ltr"
+                    android:textColorHint="#50BCB4"
+                    app:endIconMode="password_toggle"
+                    app:startIconContentDescription="@string/app_name"
+                    app:startIconDrawable="@mipmap/ic_pass"
+                    app:startIconTint="#50BCB4">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Password"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textColorHint="#A8A8A8"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/ForgetPassword"
+                    style="@style/LightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:ellipsize="start"
+                    android:gravity="center"
+                    android:text="@string/ForgetPass"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_Set_Login"
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btn_green_gradient_50"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/Login"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_green_gradient"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Register"
+                    style="@style/BoldText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/ic_join"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="start"
+                    android:text="@string/HasNoAcc"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,307 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="ltr">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/header_edit_account" />
+
+        <ScrollView
+            android:id="@+id/Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Footer"
+            android:layout_below="@+id/Header"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:touchscreenBlocksFocus="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="30dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_margin="15dp"
+                        android:gravity="center_horizontal|bottom"
+                        android:src="@mipmap/def_icon_edit" />
+
+
+                    <TextView
+                        android:id="@+id/tv_Title"
+                        style="@style/LightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:drawableRight="@mipmap/ic_edit2"
+                        android:drawablePadding="12dp"
+                        android:ellipsize="start"
+                        android:gravity="left|center_vertical"
+                        android:text="desc desc desc "
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_Email"
+                        style="@style/LightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:drawablePadding="12dp"
+                        android:ellipsize="start"
+                        android:gravity="left"
+                        android:text="desc desc desc "
+                        android:textColor="#94989F"
+                        android:textSize="10sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_Desc"
+                        style="@style/LightText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:background="#F3F3F3"
+                        android:drawableRight="@mipmap/ic_edit2"
+                        android:drawablePadding="12dp"
+                        android:ellipsize="start"
+                        android:gravity="left|top"
+                        android:padding="10dp"
+                        android:text="desc desc desc desc desc desc desc desc "
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/WorkDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="left"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="7dp"
+                            android:gravity="center_horizontal|top"
+                            android:src="@mipmap/back2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/BoldText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="start"
+                                android:gravity="center"
+                                android:text="@string/WorkDay"
+                                android:textColor="#94989F"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_Day"
+                                style="@style/BoldText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="start"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#1D1D1D"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:gravity="center_horizontal|top"
+                            android:src="@mipmap/ic_date_time" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="left"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_margin="7dp"
+                            android:gravity="center_horizontal|top"
+                            android:src="@mipmap/back2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/BoldText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="start"
+                                android:gravity="center"
+                                android:text="@string/DailyWorkTimes"
+                                android:textColor="#94989F"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_Time"
+                                style="@style/BoldText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:ellipsize="start"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#1D1D1D"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:gravity="center_horizontal|top"
+                            android:src="@mipmap/ic_date_time" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/Tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#FFFFFF"
+                    android:layoutDirection="ltr"
+                    android:overScrollMode="never"
+                    android:padding="4dp"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabInlineLabel="true"
+                    app:tabMinWidth="65dp"
+                    app:tabMode="fixed"
+                    app:tabPadding="0dp"
+                    app:tabPaddingEnd="0dp"
+                    app:tabPaddingStart="0dp"
+                    app:tabRippleColor="@android:color/transparent"
+                    tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.tabs.TabLayout>
+
+                <utils.ExpandableHeightGridView
+                    android:id="@+id/lvMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:horizontalSpacing="7dp"
+                    android:layoutDirection="ltr"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true"
+                    android:verticalSpacing="7dp">
+
+                </utils.ExpandableHeightGridView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/Footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_Buy"
+                style="@style/BoldText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_gradient_50"
+                android:elevation="2dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/Save2"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

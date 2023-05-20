@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "758793369877",
+    "project_id": "gym-app-910c3",
+    "storage_bucket": "gym-app-910c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758793369877:android:231b9d6c444dcae59f511c",
+        "android_client_info": {
+          "package_name": "com.usmart.com.bfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758793369877-7cg7kpecl5q736kicu2rk5r7cjaom7or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtEPB8XKUulPq0c9VMWgH1eNnSk_NHdCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758793369877-7cg7kpecl5q736kicu2rk5r7cjaom7or.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "758793369877-16h3v0ubgj93ogtc0albj85q458epjta.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "USmart.GYM.com"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758793369877:android:a04c65cdab6398c49f511c",
+        "android_client_info": {
+          "package_name": "com.usmart.com.bfit_coaches"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758793369877-7cg7kpecl5q736kicu2rk5r7cjaom7or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtEPB8XKUulPq0c9VMWgH1eNnSk_NHdCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758793369877-7cg7kpecl5q736kicu2rk5r7cjaom7or.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "758793369877-16h3v0ubgj93ogtc0albj85q458epjta.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "USmart.GYM.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

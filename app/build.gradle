@@ -1,0 +1,124 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.usmart.com.bfit_coaches"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 4
+        versionName "4.0.0"
+        multiDexEnabled true
+        useLibrary 'org.apache.http.legacy'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        manifestPlaceholders = [appPackageName: "${applicationId}"]
+
+    }
+  /*  dexOptions {
+        jumboMode true
+    }*/
+    buildFeatures {
+        dataBinding = true
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        pickFirst 'AndroidManifest.xml'
+    }
+    repositories {
+        jcenter()
+
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.0"
+    implementation 'androidx.work:work-runtime:2.8.0-rc01'
+    //noinspection GradleCompatible
+    implementation "com.android.support:design:29.0.0"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation files('libs/android-async-http-1.4.3.jar')
+    implementation 'com.ethanhua:skeleton:1.1.2'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+   // implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.infideap.drawerbehavior:drawer-behavior:1.0.4'
+
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'android.arch.work:work-runtime:1.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation  'com.fxn769:pix:1.5.6'
+    implementation 'com.hbb20:ccp:2.4.7'
+    implementation 'com.github.stfalcon:multiimageview:0.1'
+    implementation  'com.fxn769:pix:1.5.6'
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+  //  implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+    implementation 'com.github.bolaware:momentz:v2.0'
+    implementation 'com.fxn769:pix:1.5.6'
+    implementation files('libs/java-json.jar')
+}
+repositories {
+    mavenCentral()
+}
+apply plugin: 'com.google.gms.google-services'

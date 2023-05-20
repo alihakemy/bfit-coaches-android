@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/header_section" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Header"
+            android:layout_marginTop="15dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Title_ar"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Name_ar"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Title_en"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Name_en"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Desc_ar"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Package_ar"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Desc_en"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Package_en"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Period"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Package_period"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        style="@style/BoldText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="start"
+                        android:text="@string/DK3"
+                        android:textColor="#F92814"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Plan_Price"
+                        android:layoutDirection="rtl"
+                        android:textColorHint="#000000"
+                        app:endIconMode="none"
+                        app:startIconContentDescription="@string/app_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_Package_price"
+                            style="@style/BoldText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="right|center_vertical"
+                            android:inputType="phone"
+                            android:padding="5dp"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:onClick="gotoDiscount"
+                    android:orientation="horizontal"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                    <TextView
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/HasDiscount"
+                        android:textColor="#50BCAF"
+                        android:textSize="10sp" />
+
+                    <Switch
+                        android:id="@+id/Chk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:theme="@style/SCBSwitch" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_Discount"
+                    android:visibility="gone"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Package_discount"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/After_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone"
+                    android:background="@drawable/border"
+                    android:hint="@string/Plan_After_Discount"
+                    android:layoutDirection="rtl"
+                    android:textColorHint="#000000"
+                    app:endIconMode="none"
+                    app:startIconContentDescription="@string/app_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_Package_After_discount"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:gravity="right|center_vertical"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/Extra_Details"
+                    android:textColor="#50BCAF"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/Add_Details"
+                    style="@style/BoldText"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/ic_add" />
+
+                <LinearLayout
+                    android:id="@+id/OptionsItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_Add"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/btn_green_gradient_50"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/Add"
+                        android:textColor="@color/colorMain"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:contentDescription="TODO"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

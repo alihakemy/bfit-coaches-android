@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Time_Right"
+            style="@style/BoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="78978"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_Right"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_green_gradient"
+            android:gravity="right"
+            android:padding="7dp"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:padding="7dp"
+            android:src="@mipmap/def2"
+            android:visibility="gone" />
+
+        <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/video_layout_Right"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/black"
+            android:visibility="gone">
+
+            <com.universalvideoview.UniversalVideoView
+                android:id="@+id/videoView_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                app:uvv_autoRotation="true"
+                app:uvv_fitXY="false" />
+
+            <com.universalvideoview.UniversalMediaController
+                android:id="@+id/media_controller_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:uvv_scalable="true" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Time_Left"
+            style="@style/BoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="78978"
+            android:textColor="#000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_Left"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gray"
+            android:gravity="right"
+            android:padding="7dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:padding="7dp"
+            android:src="@mipmap/def2"
+            android:visibility="gone" />
+
+        <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/video_layout_Left"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@android:color/black"
+            android:visibility="gone">
+
+            <com.universalvideoview.UniversalVideoView
+                android:id="@+id/videoView_Left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                app:uvv_autoRotation="true"
+                app:uvv_fitXY="false" />
+
+            <com.universalvideoview.UniversalMediaController
+                android:id="@+id/media_controller_Left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:uvv_scalable="true" />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

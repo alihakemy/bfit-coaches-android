@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:background="@drawable/btn_green_gradient"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/MenuButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:onClick="gotoBack"
+        android:padding="10dp"
+        android:src="@drawable/white_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/MenuButton"
+        android:gravity="right|center_vertical"
+        android:drawablePadding="5dp"
+        android:text="@string/Logout"
+        android:onClick="gotoLogout"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        style="@style/BoldText"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

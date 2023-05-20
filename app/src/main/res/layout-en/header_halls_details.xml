@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_green_gradient"
+    android:gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/Fav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_gravity="left"
+        android:contentDescription="@string/app_name"
+        android:onClick="gotoSetting"
+        android:padding="10dp"
+        android:src="@mipmap/setting" />
+
+    <TextView
+        android:id="@+id/MainTitle"
+        style="@style/BoldText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="left|center_vertical"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/MenuButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:contentDescription="@string/app_name"
+        android:onClick="gotoBack"
+        android:layoutDirection="ltr"
+        android:padding="10dp"
+        android:src="@drawable/white_back" />
+
+
+</LinearLayout>

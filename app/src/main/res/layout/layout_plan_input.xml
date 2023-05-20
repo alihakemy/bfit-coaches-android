@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Name_ar_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border"
+        android:hint="@string/Extra_Details_ar"
+        android:layoutDirection="rtl"
+        android:textColorHint="#000000"
+        app:endIconMode="none"
+        app:startIconContentDescription="@string/app_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_Name_ar"
+            style="@style/BoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:inputType="text"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Name_en_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:hint="@string/Extra_Details_en"
+        android:layoutDirection="rtl"
+        android:textColorHint="#000000"
+        app:endIconMode="none"
+        app:startIconContentDescription="@string/app_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_Name_en"
+            style="@style/BoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:inputType="text"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_Delete"
+        style="@style/BoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_red_radius50"
+        android:text="@string/Delete"
+        android:textColor="@color/colorMain"
+        android:textSize="10sp" />
+</LinearLayout>
+
+

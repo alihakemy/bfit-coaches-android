@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/CancelAll"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:onClick="gotoBack"
+        android:padding="5dp"
+        android:src="@mipmap/arrow" />
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/CancelAll"
+        android:layout_toRightOf="@+id/LeftSide"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="14sp"
+        style="@style/BoldText" />
+
+    <RelativeLayout
+        android:id="@+id/LeftSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="5dp"
+             />
+    </RelativeLayout>
+
+
+</RelativeLayout>

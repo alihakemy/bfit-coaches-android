@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_green_gradient"
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:id="@+id/User_Frame"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:onClick="gotoAccount">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/User_Image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_avatar"
+                app:civ_border_color="#50BCB4"
+                app:civ_border_width="1dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_gravity="left|bottom"
+                android:src="@mipmap/ic_add"
+                app:civ_border_color="#50BCB4"
+                app:civ_border_width="3dp" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toLeftOf="@+id/User_Frame"
+            android:layout_toRightOf="@+id/LeftSide"
+            android:gravity="center_vertical"
+            android:onClick="gotoAccount"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/BoldText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingRight="7dp"
+                android:text="@string/Welcome"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/UserName"
+                style="@style/BoldText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:visibility="invisible"
+                android:paddingRight="7dp"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/LeftSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <FrameLayout
+                android:id="@+id/CartButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:onClick="gotoCart"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/ic_noti" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_CartNum"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/btn_red_radius50"
+                    android:ellipsize="start"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_viewStories"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/viewStories"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <Button
+        style="@style/BoldText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_gray2_radius10"
+        android:drawableLeft="@mipmap/ic_search"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:text="@string/Search"
+        android:textColor="#8B959E"
+        android:textSize="14sp" />
+</LinearLayout>

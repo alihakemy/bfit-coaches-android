@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#50BCAF</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#666666</item>
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/cairo_bold</item>
+    </style>
+
+
+    <style name="BoldText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/cairo_bold</item>
+    </style>
+
+    <style name="LightText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/cairo_light</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#000</item>
+        <item name="colorControlActivated">#E89842</item>
+      <!--  <item name="android:progressDrawable">@mipmap/non_select_rate</item>
+        <item name="android:indeterminateDrawable">@mipmap/select_rate</item>-->
+    </style>
+
+
+</resources>
